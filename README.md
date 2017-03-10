@@ -13,9 +13,9 @@ Install the following programs for audio visualization and playback (available f
 
 Install a plaintext editor if you don't have one already.
 
-▸ TextWrangler: http://www.barebones.com/products/textwrangler/
+- TextWrangler: http://www.barebones.com/products/textwrangler/
     
-▸ Geany: https://www.geany.org/Download/Releases
+- Geany: https://www.geany.org/Download/Releases
 
 
 ## Command Line Setup (Mac)
