@@ -1,7 +1,9 @@
 # Workshop: Audio Machine Learning Introduction
 
 - Download five or ten historical NBC radio recordings from Archive.org.
-  - [https://archive.org/details/NBCCompleteBroadcastDDay/](https://archive.org/details/NBCCompleteBroadcastDDay/)
+  - https://archive.org/details/NBCCompleteBroadcastDDay/
+  - easy download: https://www.dropbox.com/sh/zd0pxk2gcq079xh/AAC-JYAO3JP5MeTMa1F0K6F3a?dl=0
+
 
 
 
@@ -45,27 +47,29 @@
 
 
 
-- Repeat this process, collecting tags for five or ten chime sequences.
+- Repeat this process, collecting tags for five or ten chime sequences. Note: you can close the Sonic Visualiser window before opening a new file
 
-- Next we'll extract these segments as new audio files. If you haven't already, download Audio Tagging Toolkit. On the right side of the page, click "Clone or Download," then "Download ZIP." Double click the ZIP file to open.
+- Next we'll extract these segments as new audio files. If you haven't already, download Audio Tagging Toolkit.
 
   - https://github.com/hipstas/audio-tagging-toolkit
 
 - Open a new terminal window and `cd` to the toolkit's directory.
 
 ```
-cd /path/to/audio-tagging-toolkit-master/
+cd /path/to/audio-tagging-toolkit/
 ```
 
-- To run a script, we will execute it using Python along with a series of options. Here is basic format: 
+
+
+- To run a script, we will execute it using Python along with a series of options. Here is the basic format.
 
 ```
 python ExcerptClass.py -i /path/to/audio.mp3 -t /path/to/tags.csv -e 1 -o /path/to/output/directory
 ```
 
-- The "-i" option is the pathname for our audio file. The "-t" option points to a CSV tag file from Sonic Visualiser. The "-e" option indicates we want to extract audio for class 1, which we saw in the CSV file above.
+- The "-i" option is the pathname for our audio file. The "-t" option points to a CSV tag file from Sonic Visualiser. The "-e" option indicates we want to extract audio for class 1, which we saw in the CSV file above. 
 
-- To get a file's pathname, drag its icon from a Finder window into a Terminal window. 
+- To get a file's pathname, drag its icon from a Finder window into a terminal window. 
 
 
 
