@@ -2,6 +2,7 @@
 
 - Download five or ten historical NBC radio recordings from Archive.org.
   - https://archive.org/details/NBCCompleteBroadcastDDay/
+  - easy download: https://www.dropbox.com/sh/zd0pxk2gcq079xh/AAC-JYAO3JP5MeTMa1F0K6F3a?dl=0
 
 
 
