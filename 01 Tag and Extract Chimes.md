@@ -79,11 +79,13 @@ python ExcerptClass.py -i ~/Desktop/NBC_Radio/CBD-440606_NBC1945-HVKaltenborn.mp
 
 ### Extracting Non-Chime Audio
 
-- We also need examples of non-chime audio in order to train our classifier, so let's choose some clips at random. Our 
+- We also need examples of non-chime audio in order to train our classifier, so let's choose some clips at random. The `RandomTags.py` script in Audio Tagging Toolkit will handle the details. 
 
 ```
-python RandomTags.py -s 3 -n 3 -e -i /path/to/example.mp3 -o /path/to/output_dir/
+python RandomTags.py -n 3 -s 3 -i /path/to/example.mp3 -o /path/to/output_dir/
 ```
+- The example above will extract three clips from example.mp3, each three seconds long. It will then export them as WAV files to an output directory.
+
 
 
 
