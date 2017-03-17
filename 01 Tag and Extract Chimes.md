@@ -84,7 +84,19 @@ python ExcerptClass.py -i ~/Desktop/NBC_Radio/CBD-440606_NBC1945-HVKaltenborn.mp
 ```
 python RandomTags.py -n 3 -s 3 -i /path/to/example.mp3 -o /path/to/output_dir/
 ```
-- The example above will extract three clips from example.mp3, each three seconds long. It will then export them as WAV files to an output directory.
+- The example above will extract three clips from example.mp3, each three seconds long. It will then export them as WAV files to a specified output directory.
+
+- Create a folder on your desktop called "NBC_Not_Chimes." Try entering a command like the one above to see if it works.
+
+- If you don't want to enter a new `RandomTags.py` command for each file, you can loop through your audio files using a short bash script:
+
+```
+for filename in ~/Desktop/NBC_Radio/*.mp3; do
+python RandomTags.py -n 3 -s 3 -i $filename -o ~/Desktop/NBC_Not_Chimes/ ;
+done
+```
+
+- Once you've generated a set of random audio segments, you'll need to make sure they don't include any chime audio by mistake. Open VLC Media Player and drag your random files into the playlist window. Now listen to the set; if a clip contains chimes, locate it in the Finder and delete it.
 
 
 
