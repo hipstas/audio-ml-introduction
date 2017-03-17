@@ -1,14 +1,11 @@
 # Workshop: Audio Machine Learning Introduction
 
-- Download five or ten historical NBC radio recordings from Archive.org.
+- Download five or ten historical NBC radio recordings from Archive.org and place them in a folder called "NBC_Radio" on your desktop.
   - https://archive.org/details/NBCCompleteBroadcastDDay/
   - easy download: https://www.dropbox.com/sh/zd0pxk2gcq079xh/AAC-JYAO3JP5MeTMa1F0K6F3a?dl=0
 
 
-
-
 - Open one of the recordings in Sonic Visualiser. In the toolbar, select "Pane > Add Spectrogram > [filename]: All Channels Mixed." A spectral representation of your audio will appear at the bottom of the window.
-
 
 
 ![](img/img01.png)
@@ -71,7 +68,17 @@ python ExcerptClass.py -i /path/to/audio.mp3 -t /path/to/tags.csv -e 1 -o /path/
 
 - To get a file's pathname, drag its icon from a Finder window into a terminal window. 
 
+- Create a folder called "NBC_Chimes" on your desktop, which we will use as our output folder. 
 
+```
+python ExcerptClass.py -i ~/Desktop/NBC_Radio/CBD-440606_NBC1945-HVKaltenborn.mp3 -t ~/Desktop/NBC_Radio/CBD-440606_NBC1945-HVKaltenborn.csv -e 1 -o ~/Desktop/NBC_Chimes/
+```
+
+- 
+
+
+### Extracting non-
+- 
 
 
 
