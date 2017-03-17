@@ -98,6 +98,27 @@ done
 
 - Once you've generated a set of random audio segments, you'll need to make sure they don't include any chime audio by mistake. Open VLC Media Player and drag your random files into the playlist window. Now listen to the set; if a clip contains chimes, locate it in the Finder and delete it.
 
+### Training Classifier Model
+
+- Enter the following command to launch the Python shell:
+
+```
+python
+```
+
+Now enter the following to import packages and set our working directory to the desktop.
+
+```python
+from pyAudioAnalysis import audioTrainTest as aT
+import os
+os.chdir(os.path.expand('~/Desktop/')
+```
+
+If the desktop contains directories called "NBC_Chimes" and "NBC_Not_Chimes," the following command will use any WAV audio files they contain to train a support vector machine (SVM) classifier.
+
+```python
+aT.featureAndTrain(['NBC_Not_Chimes','NBC_Chimes'], 1.0, 1.0, aT.shortTermWindow, aT.shortTermStep, "svm", "svm_chimes", False)
+```
 
 
 
