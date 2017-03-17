@@ -46,7 +46,19 @@
 
 
 
-- Repeat this process, assembling tags for five or ten chime sequences.
+- Repeat this process, collecting tags for five or ten chime sequences.
+
+- Next we'll extract these segments as new audio files. If you haven't already, download Audio Tagging Toolkit.
+
+  - https://github.com/hipstas/audio-tagging-toolkit
+
+- Open a new terminal window and `cd` to the toolkit's directory.
+
+```
+cd /path/to/audio-tagging-toolkit/
+```
+
+
 
 
 
