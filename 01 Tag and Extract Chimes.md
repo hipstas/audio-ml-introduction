@@ -46,6 +46,8 @@
 
 - Repeat this process, collecting tags for five or ten chime sequences. Note: you can close the Sonic Visualiser window before opening a new file
 
+### Extracting Chime Audio
+
 - Next we'll extract these segments as new audio files. If you haven't already, download Audio Tagging Toolkit.
 
   - https://github.com/hipstas/audio-tagging-toolkit
@@ -68,18 +70,20 @@ python ExcerptClass.py -i /path/to/audio.mp3 -t /path/to/tags.csv -e 1 -o /path/
 
 - To get a file's pathname, drag its icon from a Finder window into a terminal window. 
 
-- Create a folder called "NBC_Chimes" on your desktop, which we will use as our output folder. 
+- Create a folder called "NBC_Chimes" on your desktop, which we will use as our output folder. Construct a command for each of the files you tagged. Here is an example for a file called "CBD-440606_NBC1945-HVKaltenborn.mp3":
 
 ```
 python ExcerptClass.py -i ~/Desktop/NBC_Radio/CBD-440606_NBC1945-HVKaltenborn.mp3 -t ~/Desktop/NBC_Radio/CBD-440606_NBC1945-HVKaltenborn.csv -e 1 -o ~/Desktop/NBC_Chimes/
 ```
 
-- 
 
+### Extracting Non-Chime Audio
 
-### Extracting non-
-- 
+- We also need examples of non-chime audio in order to train our classifier, so let's choose some clips at random. Our 
 
+```
+python RandomTags.py -s 3 -n 3 -e -i /path/to/example.mp3 -o /path/to/output_dir/
+```
 
 
 
