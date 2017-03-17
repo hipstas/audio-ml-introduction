@@ -47,7 +47,7 @@
 
 
 
-- Repeat this process, collecting tags for five or ten chime sequences.
+- Repeat this process, collecting tags for five or ten chime sequences. Note: you can close the Sonic Visualiser window before opening a new file
 
 - Next we'll extract these segments as new audio files. If you haven't already, download Audio Tagging Toolkit.
 
