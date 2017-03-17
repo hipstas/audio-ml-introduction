@@ -92,7 +92,7 @@ python RandomTags.py -n 3 -s 3 -e -i /path/to/example.mp3 -o /path/to/output_dir
 
 ```
 for filename in ~/Desktop/NBC_Radio/*.mp3; do
-python RandomTags.py -n 3 -s 3 -i $filename -o ~/Desktop/NBC_Not_Chimes/ ;
+python RandomTags.py -n 3 -s 3 -e -i $filename -o ~/Desktop/NBC_Not_Chimes/ ;
 done
 ```
 
