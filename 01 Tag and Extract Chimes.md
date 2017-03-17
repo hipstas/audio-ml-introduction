@@ -61,13 +61,13 @@ cd /path/to/audio-tagging-toolkit/
 
 
 
-- To run a script, we will execute it using Python along with a series of options. Here is basic format: 
+- To run a script, we will execute it using Python along with a series of options. Here is the basic format.
 
 ```
 python ExcerptClass.py -i /path/to/audio.mp3 -t /path/to/tags.csv -e 1 -o /path/to/output/directory
 ```
 
-- The "-i" option is the pathname for our audio file. The "-t" option points to a CSV tag file from Sonic Visualiser. The "-e" option indicates we want to extract audio for class 1, which we saw in the CSV file above.
+- The "-i" option is the pathname for our audio file. The "-t" option points to a CSV tag file from Sonic Visualiser. The "-e" option indicates we want to extract audio for class 1, which we saw in the CSV file above. 
 
 - To get a file's pathname, drag its icon from a Finder window into a terminal window. 
 
