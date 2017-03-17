@@ -43,6 +43,15 @@
 - Open the CSV file in a text editor. It should look something like this: one line with three values separated by commas. The first number is the starting time of our tagged segment, in seconds. The last number is the duration of our tag. The second value, "1," is a numeric class identifier; more on this later.
 
 ![](img/img05.png)
+
+
+
+- Repeat this process, assembling tags for five or ten chime sequences.
+
+
+
+
+
 ![](img/img06.png)
 ![](img/img07.png)
 
