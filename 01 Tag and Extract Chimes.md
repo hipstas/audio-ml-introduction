@@ -18,10 +18,10 @@
 
 
 
-- Use the up and down arrows (or scroll using your mouse) to zoom. To the right of the spectrogram, in the second dropdown menu next to "Bins," change the option "Linear" to "Log."
+- To adjust zoom, use the up and down arrows or scroll using your mouse. To the right of the spectrogram, in the second dropdown menu next to "Bins," change the option "Linear" to "Log."
 
 
-- Use your left and right arrow keys (or scroll sideways using mouse) to examine the recording. Here is a typical example of speech audio.
+- To move through the recording, use your left and right arrow keys or scroll sideways with your mouse. Here is a typical example of speech audio.
 
 
 
@@ -61,10 +61,8 @@
 - Open a new terminal window and `cd` to the toolkit's directory.
 
 ```
-cd /path/to/audio-tagging-toolkit/
+cd ~/Desktop/audio-tagging-toolkit-master/
 ```
-
-
 
 - To run a script, we will execute it using Python along with a series of options. Here is the basic format.
 
