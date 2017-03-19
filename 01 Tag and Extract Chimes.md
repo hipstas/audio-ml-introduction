@@ -121,7 +121,7 @@ os.chdir(os.path.expanduser('~/Desktop/'))
 - If the desktop contains directories called "NBC_Chimes" and "NBC_Not_Chimes," the following command will use any WAV audio files they contain to train a support vector machine (SVM) classifier.
 
 ```python
-aT.featureAndTrain(['NBC_Not_Chimes','NBC_Chimes'], 1.0, 1.0, aT.shortTermWindow, aT.shortTermStep, "svm", "audio-ml-introduction/model/svm_chimes", False)
+aT.featureAndTrain(['NBC_Not_Chimes','NBC_Chimes'], 1.0, 1.0, aT.shortTermWindow, aT.shortTermStep, "svm", "audio-ml-introduction-master/model/svm_chimes", False)
 ```
 
 - This will output a model file called "svm_chimes" in the "data" directory, along with two supporting files.
