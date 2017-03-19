@@ -111,7 +111,7 @@ python
 ```python
 from pyAudioAnalysis import audioTrainTest as aT
 import os
-os.chdir(os.path.expand('~/Desktop/'))
+os.chdir(os.path.expanduser('~/Desktop/'))
 os.makedirs('data')
 ```
 
