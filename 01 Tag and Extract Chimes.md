@@ -112,7 +112,7 @@ python
 from pyAudioAnalysis import audioTrainTest as aT
 import os
 os.chdir(os.path.expand('~/Desktop/')
-os.mkdir('data')
+os.makedirs('data')
 ```
 
 - If the desktop contains directories called "NBC_Chimes" and "NBC_Not_Chimes," the following command will use any WAV audio files they contain to train a support vector machine (SVM) classifier.
@@ -127,14 +127,3 @@ aT.featureAndTrain(['NBC_Not_Chimes','NBC_Chimes'], 1.0, 1.0, aT.shortTermWindow
 
 
 ![](img/img06.png)
-![](img/img07.png)
-
-![](img/img08.png)
-
-![](img/img09.png)
-
-![](img/img10.png)
-
-![](img/img11.png)
-
-![](img/img12.png)
