@@ -1,6 +1,12 @@
 # Workshop: Audio Machine Learning Introduction
 
-- Download five or ten historical NBC radio recordings from Archive.org and place them in a folder called "NBC_Radio" on your desktop.
+### Setup
+
+- Before the workshop, follow the steps in [README.md](https://github.com/hipstas/audio-ml-introduction/blob/master/README.md) to install the software you'll need below.
+- Download this workshop guide and Audio Tagging Toolkit and unzip them. Move the **audio-ml-introduction-master** and **audio-tagging-toolkit-master** folders to the desktop.
+  - [Download workshop guide](https://github.com/hipstas/audio-ml-introduction/archive/master.zip)
+  - [Download Audio Tagging Toolkit](https://github.com/hipstas/audio-tagging-toolkit/archive/master.zip)
+- Download five or ten historical NBC radio recordings from Archive.org and place them in a new folder called **NBC_Radio** on your desktop.
   - https://archive.org/details/NBCCompleteBroadcastDDay/
   - easy download: https://www.dropbox.com/sh/zd0pxk2gcq079xh/AAC-JYAO3JP5MeTMa1F0K6F3a?dl=0
 
@@ -111,7 +117,7 @@ python
 ```python
 from pyAudioAnalysis import audioTrainTest as aT
 import os
-os.chdir(os.path.expanduser('~/Desktop/'))
+os.chdir(os.path.expanduser('~/Desktop/audio-ml-introduction/'))
 os.makedirs('data')
 ```
 
@@ -121,9 +127,18 @@ os.makedirs('data')
 aT.featureAndTrain(['NBC_Not_Chimes','NBC_Chimes'], 1.0, 1.0, aT.shortTermWindow, aT.shortTermStep, "svm", "data/svm_chimes", False)
 ```
 
-- This will output a model file called "svm_chimes" in the "data" directory, along with several supporting files.
-
-
+- This will output a model file called "svm_chimes" in the "data" directory, along with two supporting files.
 
 
 ![](img/img06.png)
+
+
+
+### Classifying Audio
+
+Move the 
+
+
+
+
+
