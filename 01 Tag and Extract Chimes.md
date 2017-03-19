@@ -124,16 +124,21 @@ os.chdir(os.path.expanduser('~/Desktop/'))
 aT.featureAndTrain(['NBC_Not_Chimes','NBC_Chimes'], 1.0, 1.0, aT.shortTermWindow, aT.shortTermStep, "svm", "audio-ml-introduction-master/model/svm_chimes", False)
 ```
 
-- This will output a model file called "svm_chimes" in the "data" directory, along with two supporting files.
+- This will output a model file called "svm_chimes" in the "model" directory, along with two supporting files.
 
 
 ![](img/img06.png)
 
 
-
 ### Classifying Audio
 
-Move the 
+- Now that our model is ready to go, enter the following commands to open the included Jupyter notebook.
+
+```
+cd ~/Desktop/audio-ml-introduction-master/
+jupyter notebook "02 Find and Play NBC Chimes.ipynb"
+```
+
 
 
 
