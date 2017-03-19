@@ -2,8 +2,8 @@
 
 ### Setup
 
-- Before the workshop, follow the steps in [README.md](https://github.com/hipstas/audio-ml-introduction/blob/master/README.md) to install the software you'll need below.
-- Download this workshop guide and Audio Tagging Toolkit and unzip them. Move the **audio-ml-introduction-master** and **audio-tagging-toolkit-master** folders to the desktop.
+- Before the workshop, follow the steps in [README.md](https://github.com/hipstas/audio-ml-introduction/blob/master/README.md) to install the software you will need for this workshop.
+- Download the workshop guide and Audio Tagging Toolkit from GitHub and unzip them. Move the **audio-ml-introduction-master** and **audio-tagging-toolkit-master** folders to the desktop.
   - [Download workshop guide](https://github.com/hipstas/audio-ml-introduction/archive/master.zip)
   - [Download Audio Tagging Toolkit](https://github.com/hipstas/audio-tagging-toolkit/archive/master.zip)
 - Download five or ten historical NBC radio recordings from Archive.org and place them in a new folder called **NBC_Radio** on your desktop.
@@ -115,7 +115,7 @@ python
 ```python
 from pyAudioAnalysis import audioTrainTest as aT
 import os
-os.chdir(os.path.expanduser('~/Desktop/audio-ml-introduction/'))
+os.chdir(os.path.expanduser('~/Desktop/audio-ml-introduction-master/'))
 os.makedirs('data')
 ```
 
