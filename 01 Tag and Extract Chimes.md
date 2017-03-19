@@ -126,13 +126,11 @@ aT.featureAndTrain(['NBC_Not_Chimes','NBC_Chimes'], 1.0, 1.0, aT.shortTermWindow
 
 - This will output a model file called "svm_chimes" in the "model" directory, along with two supporting files.
 
-
 ![](img/img06.png)
-
 
 ### Classifying Audio
 
-- Now that our model is ready to go, enter the following commands to open the included Jupyter notebook.
+- Open a new terminal window and e nter the following commands to launch the included Jupyter notebook.
 
 ```
 cd ~/Desktop/audio-ml-introduction-master/
