@@ -60,7 +60,7 @@ Before we install our Python dependencies, let’s update pip. The **`-U`** opti
     
 Enter the following command to install the required packages in Python.
 
-    pip install -U jupyter numpy scipy matplotlib pandas sklearn pydub tqdm pyAudioAnalysis
+    pip install -U jupyter numpy scipy matplotlib pandas sklearn pydub tqdm requests pyAudioAnalysis
 
 Now open Jupyter by entering the following two commands. The first navigates to the desktop and the second launches Jupyter's local notebook server.
 
