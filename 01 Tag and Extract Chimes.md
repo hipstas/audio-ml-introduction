@@ -7,8 +7,8 @@
   - [Download workshop guide](https://github.com/hipstas/audio-ml-introduction/archive/master.zip)
   - [Download Audio Tagging Toolkit](https://github.com/hipstas/audio-tagging-toolkit/archive/master.zip)
 - Download five or ten historical NBC radio recordings from Archive.org and place them in a new folder called **NBC_Radio** on your desktop.
-  - https://archive.org/details/NBCCompleteBroadcastDDay/
-  - easy download: https://www.dropbox.com/sh/zd0pxk2gcq079xh/AAC-JYAO3JP5MeTMa1F0K6F3a?dl=0
+  - [https://archive.org/details/NBCCompleteBroadcastDDay/](https://archive.org/details/NBCCompleteBroadcastDDay/)
+  - [Bundled files](https://www.dropbox.com/s/xz05iyk0y0mkwpg/NBC_Radio.zip?dl=0)
 - Create folders on your desktop called **NBC_Chimes** and **NBC_Not_Chimes**.
 
 ### Tagging Chimes
