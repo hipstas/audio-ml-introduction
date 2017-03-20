@@ -38,9 +38,8 @@
 
 ![](img/img05.png)
 
+- Repeat this process, collecting tags for five or ten chime sequences. Quit Sonic Visualiser after working on each file.
 
-
-- Repeat this process, collecting tags for five or ten chime sequences. Note: you can close the Sonic Visualiser window before opening a new file
 
 ### Extracting Chime Audio
 
