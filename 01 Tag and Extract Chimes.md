@@ -9,10 +9,11 @@
 - Download five or ten historical NBC radio recordings from Archive.org and place them in a new folder called **NBC_Radio** on your desktop.
   - https://archive.org/details/NBCCompleteBroadcastDDay/
   - easy download: https://www.dropbox.com/sh/zd0pxk2gcq079xh/AAC-JYAO3JP5MeTMa1F0K6F3a?dl=0
+- Create folders on your desktop called **NBC_Chimes** and **NBC_Not_Chimes**.
 
+### Tagging Chimes
 
 - Open one of the recordings in Sonic Visualiser. In the toolbar, select "Pane > Add Spectrogram > [filename]: All Channels Mixed." A spectral representation of your audio will appear at the bottom of the window.
-
 
 ![](img/img01.png)
 
