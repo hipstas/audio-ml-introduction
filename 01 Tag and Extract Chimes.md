@@ -17,32 +17,21 @@
 
 ![](img/img01.png)
 
-
-
 - To adjust zoom, use the up and down arrows or scroll using your mouse. To the right of the spectrogram, in the second dropdown menu next to "Bins," change the option "Linear" to "Log."
-
 
 - To move through the recording, use your left and right arrow keys or scroll sideways with your mouse. Here is a typical example of speech audio.
 
-
-
 ![](img/img02.png)
-
-
 
 - Scroll to the end of the file and see if you can identify the NBC chime sequence by eye. It should look something like this.
 
 ![](img/img03.png)
-
-
 
 - Next we'll apply a tag that identifies this segment of audio. In the toolbar, choose "Layer > Add New Regions Layer." 
 - The Draw tool in the upper right should be highlighted automatically. To make it easier to see our work, click the dropdown menu next to "Plot Type" and choose "Segmentation."
 - Click and drag in the waveform at the top of the window to select just the chime segment.
 
 ![](img/img04.png)
-
-
 
 - In the toolbar, select "File > Export Annotation Layer" and enter a name for your annotation file. For convenience, I recommend using the name of the audio file, using the extension ".csv" instead of ".mp3."
 - Open the CSV file in a text editor. It should look something like this: one line with three values separated by commas. The first number is the starting time of our tagged segment, in seconds. The last number is the duration of our tag. The second value, "1," is a numeric class identifier; more on this later.
@@ -58,6 +47,8 @@
 - Next we'll extract these segments as new audio files. If you haven't already, download Audio Tagging Toolkit.
 
   - https://github.com/hipstas/audio-tagging-toolkit
+
+- Open Terminal, located under "Utilities" in your "Applications" folder.
 
 - Open a new terminal window and `cd` to the toolkit's directory.
 
@@ -131,7 +122,7 @@ aT.featureAndTrain(['NBC_Not_Chimes','NBC_Chimes'], 1.0, 1.0, aT.shortTermWindow
 
 ### Classifying Audio
 
-- Open a new terminal window and e nter the following commands to launch the included Jupyter notebook.
+- Open a new terminal window and enter the following commands to launch the included Jupyter notebook.
 
 ```
 cd ~/Desktop/audio-ml-introduction-master/
