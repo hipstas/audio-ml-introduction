@@ -2,7 +2,7 @@
 
 ### Setup
 
-- Before the workshop, follow the steps in [README.md](https://github.com/hipstas/audio-ml-introduction/blob/master/README.md) to install the software you will need for this workshop.
+- Before the workshop, follow the steps in [README.md](https://github.com/hipstas/audio-ml-introduction/blob/master/README.md) to install the software you will need.
 - Download the workshop guide and Audio Tagging Toolkit from GitHub and unzip them. Move the **audio-ml-introduction-master** and **audio-tagging-toolkit-master** folders to the desktop.
   - [Download workshop guide](https://github.com/hipstas/audio-ml-introduction/archive/master.zip)
   - [Download Audio Tagging Toolkit](https://github.com/hipstas/audio-tagging-toolkit/archive/master.zip)
@@ -68,6 +68,8 @@ python ExcerptClass.py -i /path/to/audio.mp3 -t /path/to/tags.csv -e 1 -o /path/
 - Create a folder called "NBC_Chimes" on your desktop, which we will use as our output folder. Construct a command for each of the files you tagged. Here is an example for a file called "CBD-440606_NBC1945-HVKaltenborn.mp3":
 
 ```
+cd ~/Desktop/audio-tagging-toolkit-master/
+
 python ExcerptClass.py -i ~/Desktop/NBC_Radio/CBD-440606_NBC1945-HVKaltenborn.mp3 -t ~/Desktop/NBC_Radio/CBD-440606_NBC1945-HVKaltenborn.csv -e 1 -o ~/Desktop/NBC_Chimes/
 ```
 
@@ -77,17 +79,19 @@ python ExcerptClass.py -i ~/Desktop/NBC_Radio/CBD-440606_NBC1945-HVKaltenborn.mp
 - We also need examples of non-chime audio in order to train our classifier, so let's choose some clips at random. The `RandomTags.py` script in Audio Tagging Toolkit will handle the details. 
 
 ```
-python RandomTags.py -n 3 -s 3 -e -i /path/to/example.mp3 -o /path/to/output_dir/
+python RandomTags.py -n 5 -s 3 -e -i /path/to/example.mp3 -o /path/to/output_dir/
 ```
-- The example above will extract three clips from example.mp3, each three seconds long. It will then export them as WAV files to a specified output directory.
+- The example above will extract five clips from example.mp3, each three seconds long. It will then export them as WAV files to a specified output directory.
 
 - Create a folder on your desktop called "NBC_Not_Chimes." Try entering a command like the one above to see if it works.
 
 - If you don't want to enter a new `RandomTags.py` command for each file, you can loop through your audio files using a short bash script:
 
 ```
+cd ~/Desktop/audio-tagging-toolkit-master/
+
 for filename in ~/Desktop/NBC_Radio/*.mp3; do
-python RandomTags.py -n 3 -s 3 -e -i $filename -o ~/Desktop/NBC_Not_Chimes/ ;
+python RandomTags.py -n 5 -s 3 -e -i $filename -o ~/Desktop/NBC_Not_Chimes/ ;
 done
 ```
 
