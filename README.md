@@ -43,22 +43,34 @@ Next, enter this command to update Homebrew.
     brew update
 
 > If Homebrew returns an error, enter the following command to give it the permissions it expects.
-
+>
 >    `sudo chown $(whoami):admin /usr/local && sudo chown -R $(whoami):admin /usr/local`
 
-Python is installed by default in OS X, but we’ll want to install a fresh copy through Homebrew. This install includes the **`pip`** package manager and a few other tools Apple left out.
+Python is installed by default in macOS, but we’ll want to install a fresh copy through Homebrew. This version includes the **`pip`** package manager and a few other tools Apple left out.
 
     brew install python
 
-Now install ffmpeg, a command-line tool for audio/video encoding.
+Now install ffmpeg, a command-line tool for audio/video encoding. Be sure to copy the whole line, which includes a list of optional media codecs. This step might take a few minutes.
 
-     brew install ffmpeg --with-fdk-aac --with-ffplay --with-freetype --with-gpl --with-libass --with-libfdk-aac --with-libfreetype --with-libmp3lame --with-libopus --with-libquvi --with-libvorbis --with-libvpx --with-libx264 --with-libx265 --with-nonfree --with-opus --with-x265
+```
+brew install automake fdk-aac git lame libass libtool libvorbis libvpx opus sdl shtool texi2html theora wget x264 xvid yasm
+
+git clone http://source.ffmpeg.org/git/ffmpeg.git ffmpeg
+
+cd ffmpeg
+
+./configure  --prefix=/usr/local --enable-gpl --enable-nonfree --enable-libass \
+--enable-libfdk-aac --enable-libfreetype --enable-libmp3lame --enable-libopus \
+--enable-libtheora --enable-libvorbis --enable-libvpx --enable-libx264 --enable-libxvid
+
+make && sudo make install
+```
 
 Before we install our Python dependencies, let’s update pip. The **`-U`** option upgrades related components to their most recent versions.
 
     pip install -U pip
 
-Enter the following command to install the required packages in Python.
+Enter the following commands to install several required Python packages.
 
     pip install -U jupyter numpy scipy matplotlib pandas sklearn pydub tqdm requests
     pip install pyAudioAnalysis
