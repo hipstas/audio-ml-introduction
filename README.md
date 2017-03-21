@@ -50,7 +50,7 @@ Python is installed by default in macOS, but we’ll want to install a fresh cop
 
     brew install python
 
-Now install ffmpeg, a command-line tool for audio/video encoding. Note that the first and fourth lines are very long; be sure you copy 
+Now install ffmpeg, a command-line tool for audio/video encoding. Enter the following commands one at a time; note that the first and fourth lines are very long.
 
 ```
 brew install automake fdk-aac git lame libass libtool libvorbis libvpx opus sdl shtool texi2html theora wget x264 xvid yasm
