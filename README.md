@@ -27,24 +27,24 @@ Launch **`Terminal`** in macOS, located at **`/Applications/Utilities/Terminal.a
 >    `su your_admin_name`
 >
 > If you don't remember your admin username, the following command will list the users on your system.
-> 
->    `ls /Users`
+>
+>    `ls /Users/`
 
-Enter the following and follow the prompt to install Command Line Tools for Xcode.
+To install a bundle of command-line tools provided by Apple, paste the following line into the terminal window and press return. When prompted, click "Install," then "Agree."
 
     xcode-select --install
 
-To install the **`Homebrew`** package manager, paste in the following command and press return.
+Run the following command to install the **`Homebrew`** package manager. Enter your password at the prompt to proceed.
 
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-When it's done, enter the following to update Homebrew.
+Next, enter this command to update Homebrew.
 
     brew update
 
-If Homebrew produces an error when you first try running it, enter the following command (without the '#') to give it the permissions it expects.
+> If Homebrew returns an error, enter the following command to give it the permissions it expects.
 
-    # sudo chown $(whoami):admin /usr/local && sudo chown -R $(whoami):admin /usr/local
+>    `sudo chown $(whoami):admin /usr/local && sudo chown -R $(whoami):admin /usr/local`
 
 Python is installed by default in OS X, but we’ll want to install a fresh copy through Homebrew. This install includes the **`pip`** package manager and a few other tools Apple left out.
 
