@@ -100,3 +100,5 @@ Leave this terminal window open as long as you're using Jupyter. You might want 
 The Jupyter interface should appear in a new browser window, displaying the files on your desktop. If it doesn't launch automatically, enter **`http://localhost:8888`** in your browser's URL box.
 
 Create a new Jupyter notebook via the dropdown menu at the upper left: **`File > New Noteboook > Python 2`**
+
+If you've made it this far, you're done for now. We'll talk more about Jupyter during the workshop.
