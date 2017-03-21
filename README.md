@@ -50,7 +50,22 @@ Python is installed by default in macOS, but we’ll want to install a fresh cop
 
     brew install python
 
-Now install ffmpeg, a command-line tool for audio/video encoding. Enter the following commands one at a time; note that the first and fourth lines are very long.
+Before we install our Python dependencies, let’s update pip. The **`-U`** option upgrades related components to their most recent versions.
+
+        pip install -U pip
+
+Enter the following commands to install several required Python packages.
+
+```
+pip install -U jupyter numpy scipy matplotlib pandas sklearn pydub tqdm requests
+
+pip install pyAudioAnalysis
+```
+
+
+Now install **`ffmpeg`**, a command-line tool for audio/video encoding. First we will install several media codecs, then we will download ffmpeg's source code and compile it before installing. Although it is faster to install ffmpeg through Homebrew, that version can't read or write MP3 files.
+
+Enter the following commands one at a time; note that the first and fourth lines are very long. After the last command you will be prompted to enter your password.
 
 ```
 brew install automake fdk-aac git lame libass libtool libvorbis libvpx opus sdl shtool texi2html theora wget x264 xvid yasm
@@ -64,22 +79,18 @@ cd ffmpeg
 make && sudo make install
 ```
 
-Before we install our Python dependencies, let’s update pip. The **`-U`** option upgrades related components to their most recent versions.
+While you wait for ffmpeg to compile (which may take 5 or 10 minutes), let's create a Jupyter notebook. Open a new terminal window by pressing  ⌘+N or selecting "Shell > New Window > New Window with Settings - Novel" in the toolbar.
 
-    pip install -U pip
+Now launch Jupyter by entering the following two commands. The first navigates to the desktop and the second launches Jupyter's local notebook server.
 
-Enter the following commands to install several required Python packages.
+```
+cd ~/Desktop
 
-    pip install -U jupyter numpy scipy matplotlib pandas sklearn pydub tqdm requests
-    pip install pyAudioAnalysis
-
-Now open Jupyter by entering the following two commands. The first navigates to the desktop and the second launches Jupyter's local notebook server.
-
-    cd ~/Desktop
-    jupyter notebook
+jupyter notebook
+```
 
 Leave this terminal window open as long as you're using Jupyter. You might want to minimize it.
 
-The Jupyter interface should appear in a new browser window, displaying the files on your desktop. If not, point your browser to **`http://localhost:8888`**
+The Jupyter interface should appear in a new browser window, displaying the files on your desktop. If it doesn't launch automatically, enter **`http://localhost:8888`** in your browser's URL box.
 
 Create a new Jupyter notebook via the dropdown menu at the upper left: **`File > New Noteboook > Python 2`**
