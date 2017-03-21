@@ -20,14 +20,14 @@ Install a plaintext editor if you don't have one already.
 
 ## Command Line Setup (Mac)
 
-Open a new terminal window. Launch **`Terminal`** in OS X, located at **`/Applications/Utilities/Terminal.app`**
+Launch **`Terminal`** in macOS, located at **`/Applications/Utilities/Terminal.app`**
 
 > If your current account doesn't have admin privileges, switch users by entering the following command (substituting the username of the admin account). Press return and enter your password at the prompt.
-
+>
 >    `su your_admin_name`
-
+>
 > If you don't remember your admin username, the following command will list the users on your system.
-
+> 
 >    `ls /Users`
 
 Enter the following and follow the prompt to install Command Line Tools for Xcode.
