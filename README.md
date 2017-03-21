@@ -14,7 +14,7 @@ Install the following programs for audio visualization and playback (available f
 Install a plaintext editor if you don't have one already.
 
 - TextWrangler: http://www.barebones.com/products/textwrangler/
-    
+
 - Geany: https://www.geany.org/Download/Releases
 
 
@@ -24,14 +24,14 @@ Open a new terminal window. Launch **`Terminal`** in OS X, located at **`/Applic
 
 > If your current account doesn't have admin privileges, switch users by entering the following command (substituting the username of the admin account). Press return and enter your password at the prompt.
 
->    su your_admin_name
+>    `su your_admin_name`
 
 > If you don't remember your admin username, the following command will list the users on your system.
 
->    ls /Users
-    
+>    `ls /Users`
+
 Enter the following and follow the prompt to install Command Line Tools for Xcode.
-    
+
     xcode-select --install
 
 To install the **`Homebrew`** package manager, paste in the following command and press return.
@@ -41,7 +41,7 @@ To install the **`Homebrew`** package manager, paste in the following command an
 When it's done, enter the following to update Homebrew.
 
     brew update
-    
+
 If Homebrew produces an error when you first try running it, enter the following command (without the '#') to give it the permissions it expects.
 
     # sudo chown $(whoami):admin /usr/local && sudo chown -R $(whoami):admin /usr/local
@@ -57,7 +57,7 @@ Now install ffmpeg, a command-line tool for audio/video encoding.
 Before we install our Python dependencies, let’s update pip. The **`-U`** option upgrades related components to their most recent versions.
 
     pip install -U pip
-    
+
 Enter the following command to install the required packages in Python.
 
     pip install -U jupyter numpy scipy matplotlib pandas sklearn pydub tqdm requests
@@ -73,5 +73,3 @@ Leave this terminal window open as long as you're using Jupyter. You might want 
 The Jupyter interface should appear in a new browser window, displaying the files on your desktop. If not, point your browser to **`http://localhost:8888`**
 
 Create a new Jupyter notebook via the dropdown menu at the upper left: **`File > New Noteboook > Python 2`**
-
-
