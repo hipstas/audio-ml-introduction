@@ -95,7 +95,7 @@ done
 
 ### Training Classifier Model
 
-- Enter the following command to launch the Python shell:
+- Enter the following command in the terminal to launch the Python shell:
 
 ```
 python
