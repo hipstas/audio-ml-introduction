@@ -48,11 +48,17 @@ Next, enter this command to update Homebrew.
 
 Python is installed by default in macOS, but we’ll want to install a fresh copy through Homebrew. This version includes the **`pip`** package manager and a few other tools Apple left out.
 
-    brew install python
+```
+brew install python
+
+brew link --overwrite python
+```
 
 Before we install our Python dependencies, let’s update pip. The **`-U`** option upgrades related components to their most recent versions.
 
-        pip install -U pip
+```
+pip install -U pip
+```
 
 Enter the following commands to install several required Python packages.
 
