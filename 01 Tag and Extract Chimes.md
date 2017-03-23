@@ -115,7 +115,7 @@ os.chdir(os.path.expanduser('~/Desktop/'))
 aT.featureAndTrain(['NBC_Not_Chimes','NBC_Chimes'], 1.0, 1.0, aT.shortTermWindow, aT.shortTermStep, "svm", "audio-ml-introduction-master/model/svm_chimes", False)
 ```
 
-- This will output a model file called "svm_chimes" in the "model" directory, along with two supporting files.
+- This will output a model file called "svm_chimes" in the "model" directory within the audio-ml-introduction-master directory, along with two supporting files.
 
 ![](img/img06.png)
 
